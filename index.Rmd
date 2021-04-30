@@ -1,0 +1,69 @@
+
+# Why EMR Best Practice Guidance
+
+This document pulls together a range of best practice guidance from trusted sources and makes recommendations for how we apply these to projects in EMR. The purpose is to generate improvements in how we set up, control and manage projects, analysis and code. This will increase team resilience and drive a consistent approach across the unit (and potentially wider), making it easier to collaborate between projects.
+
+This document is the guidance on how EMR can meet the minimum standards for coding and analysis in government. The aims are:
+
+- Standardization
+- Implementation of Best Practice
+
+This allows analysts to focus on producing their analysis, NOT on the infrastructure and tools required to do so.
+
+## Why Standardisation?
+
+- Maintainability in teams with high staff turnover
+- Knowledge Sharing and effective collaboration.
+- Training
+- Minimising Documentation- allows reuse across teams
+
+This best practice guidance sits alongside a strategy to decrease the use of bespoke solutions (such as Econlab) and move towards using more strategic solutions.
+
+We will work closely with teams on an implementation plan as there will be some investment required to implement these guidelines and therefore the implementation might require prioritization and sequencing at a local level.
+
+## A minimum standard of RAP
+
+These guidelines follow the document that The Office for Statistics Regulation has published [Reproducible Analytical Pipelines Overcoming barriers to adoption](https://osr.statisticsauthority.gov.uk/wp-content/uploads/2021/03/Reproducible-Analytical-Pipelines-Overcoming-barriers-to-adoption.pdf). This has set out minimum principles for best practice in analysis (including research) and statistical production.
+
+::: {.warning}
+**To meet this minimum standard the following principles are required:**
+:::
+
+* Peer review to ensure the process is reproducible and identify improvements 
+
+* No or minimal manual interference, for example copy-paste, point-click or drag-drop steps – instead the process should be carried out using computer code which can be inspected by others
+
+* Open-source programming languages, such as R or Python, for coding so that processes do not rely on proprietary software licenses and can be reproduced by statistics producers and users
+
+* Version control software, such as Git, to guarantee an audit trail of changes made to code
+
+* Publication of code, whenever possible, on code hosting platforms such as GitHub to improve transparency
+
+* Well-commented code and embedded documentation to ensure the process can be understood and used by others
+
+* Embedding of existing quality assurance practices in code, following guidance set by organisations and the GSS
+
+* These fundamental principles can be enhanced, for example by writing code in modular functions that can be reused, or introducing unit tests to ensure that code works as expected. It is also important to note that RAP is not all or nothing – implementing just some of the principles above will generate improvements.
+
+# EMR coding language
+
+![](https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png)
+
+There are many different languages/tools available in the ONS, Python, R SQL, SAS, SPSS, Stata, excel etc. To promote high standards and for standardisation EMR has defined the preferred tools. We ask that you use these unless you have a specific use case that needs a different approach.
+
+EMR has chosen **python** as it&#39;s default language. R is available but Python can in most cases achieve the same outcomes. This is because much of our work requires data engineering before being able to do analysis (for example data linking, cleaning, pre-processing and aggregation). Python is the best tool for these tasks.
+
+**Stata** is the second tool used in EMR and is appropriate for analysis of research ready data sets, but not for data preparation. Python is preferred as it is open source and more widely supported, such as in DAP.
+
+> To meet point 3 of the [Technology Code of Practice](https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice) your plan or design must show you&#39;ve considered using open source and publishing your code openly.
+> -- <cite>Source [GDS](https://www.gov.uk/guidance/be-open-and-use-open-source)</cite>
+
+- New projects would be expected to use Python.
+- If an **existing** project uses R then consider moving to Python, but consider the burden of refactoring an existing code base- it may make more sense to keep an **existing** project in R. R is also an appropriate choice when the analysis involves using readily prepared and aggregated data and the focus is more on statistical analysis and presenting results.
+- If a project uses Stata then plans should be made to migrate this over to Python. For large projects this might be a considerable task so it might be a long term aim. The reason is that Stata is not supported on some ONS platforms and doesn&#39;t meet GDS or OSR guidelines.
+
+::: {.warning}
+If you have a business case for starting a new project in something other than Python then raise this with EMR SLT. By harmonising the language that EMR uses we are better able to support projects, enable peer review across projects and perform analysis to the highest standards.
+:::
+
+

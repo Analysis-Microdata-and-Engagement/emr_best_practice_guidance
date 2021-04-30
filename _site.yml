@@ -1,0 +1,15 @@
+output_dir: docs # to host on GitHub pages
+navbar: # links to include in the bar at the top of every page
+  - text: "Home"
+    href: index.html
+  - text: "Coding Guidelines"
+    href: coding_standards.html
+  - text: "Quality Assurance"
+    href: qa_guidelines.html
+  - text: "Project Guidelines"
+    href: project_guidelines.html
+output:
+  govdown::govdown_document:
+    page_title: "html link"
+    title: "EMR "
+    logo_text: ""

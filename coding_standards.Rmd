@@ -1,0 +1,197 @@
+
+# Coding Good Practice Guidelines
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+learning_icon = fontawesome::fa("laptop-code")
+```
+
+```{css, echo=FALSE}
+.link {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #bdb7b7;
+  font-size: 2em;
+}
+
+```
+
+These are the tools that all analysts in EMR should implement.
+
+1. Version Control with Git and Gitlab/GitHub
+2. Standard project structure
+3. Good naming
+4. Documentation
+5. Functional Programming using Python Package
+6. Code Testing
+
+All these tools are supported in DAP.
+
+## Quality Assurance of Code for Analysis and Research
+
+The ONS has published the [Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) which is a resource that has been written to support analysts in government who use coding in their work. This is the main resource to learn more.
+
+## How to use this Guide
+
+Each section is a recommendation of what all projects in EMR should implement.
+
+Each section consists of a overview of the method or tool and a learning resource to get further information. This learning resource, primarily the [Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html), is the main method of learning.
+
+These Resource blocks are hyperlinks, click on them to access the resource.
+
+::: {.accordion}
+## 1 - Version Control with Git
+
+<span class="link">`r learning_icon` [Version control](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html) </span>
+
+- Git- version control system, local to your laptop
+- GitLab- hosts Git projects. Code available to team and can be made available to people in ONS
+- GitHub- similar to GitLab but code available to world- completely open
+
+GitLab is the default for projects. An AME GitHub account is available.
+
+- Help your teams to work on the same, centralised code base
+- Give your team a back up of the project on Gitlab (hard drives and CDSW storge can break)
+- Help your team keep the project clean (no historical clutter)
+- Help EMR keep an history of its projects (all discoverable in one place, that is Gitlab)
+- Guarantee an audit trail using version control software
+- Tracks changes, make AQA easier (Analytical Quality Assurance)
+- version control helps us to identify which changes have negatively impacted our work and remove them.
+- Needed for DAP projects
+
+## 2- Standard project structure
+
+<span class="link">`r learning_icon` [EMR Project Template ](https://github.com/Analysis-Microdata-and-Engagement/emr_project_template) </span>
+
+
+> [A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science)
+> -- <cite> [Cookiecutter Data Science](http://drivendata.github.io/cookiecutter-data-science/)</cite>
+
+A well-defined, standard project structure means that a newcomer can begin to understand an analysis without digging in to extensive documentation. It also means that they don&#39;t necessarily have to read 100% of the code before knowing where to look for very specific things.
+
+Well organized code tends to be self-documenting in that the organization itself provides context for your code without much overhead.
+
+People will thank you for this because they can:
+
+- Collaborate more easily with you on this analysis
+- Learn from your analysis about the process and the domain
+- Feel confident in the conclusions at which the analysis arrives
+
+Project Structure Manager
+
+We recommend that one person in the team is in charge of keeping the project (file structures, functions, modules) organised. That can be the role of a SEO or HEO with expertise in software development. They will:
+
+- The team, with the project structure manager, should agree on where to write their code and the project structure before writing code.
+- Make sure that the reviewers are indeed reviewing the naming of variables, functions, and files, and the code style.
+
+## 3 – Good naming
+
+<span class="link">`r learning_icon` [Good Naming ](https://best-practice-and-impact.github.io/qa-of-code-guidance/core_programming.html#naming) </span>
+
+
+Code with high readability is often referred to as &#39;clean code&#39;. Clean code helps us understand a program faster, as it avoids points of confusion and ambiguity.
+
+> Make sure to consult the style guides for your language as first point of call.
+> -- <cite> QA of Code </cite> 
+
+The style guide used in EMR for Python [is Pep 8](https://www.python.org/dev/peps/pep-0008/). It is recommended to use an automated check that the style has been followed, this saves tedious checks during peer review. Look at [pyflakes](https://pypi.org/project/pyflakes/), this is built into the default EMR python IDE.
+
+You should consider making sure you follow the style guide and name aspects of your code or processes with informative names. This will ensure that code can be reused across EMR and helps teams work together.
+
+- Naming Documents
+- Naming code
+  - Variables
+  - Functions
+  - Classes
+
+Someone reading your code will benefit greatly if you use names that are:
+
+- informative and not misleading
+- concise but not cryptic
+
+You might want to establish a project standard. For example you may want to name all data files using a common syntax, such as data name with a year-month-day e.g ingest_data_2019_05_26.xlsx, this will make automating aspects such as loading data easier.
+
+## 4 - Documentation
+
+<span class="link">`r learning_icon` [Code Documentation ](https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html) </span>
+
+<span class="link">`r learning_icon` [Project Documentation ](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html) </span>
+
+Documentation should be stored as close to the code as possible so that if you change your code there is less chance you forget to update the documentation (rotten documentation is harmful):
+
+- In the comments: use comments sparingly and with purpose. You are speaking to your future self and to your colleagues and reviewers. Document small hacks or pieces of algorithm where you had to sacrifice meaningful names.
+
+- In the functions docstring: use [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html)[Style Guide](https://numpydoc.readthedocs.io/en/latest/format.html). You are speaking to someone who is not going to read your code and just want to use your function. Note that a reviewer would also read that docstring to know your intent. Document things like what the function is doing, how it does it, how to use the functions, examples, etc.
+
+- In the doc folder: You are speaking to someone who may never read your code or even use it. Or someone who wants to know if they can use your work. This is where you explain what is your project about, your methodology, the why-s of your methods, the challenges you faced.
+- In the README.md at the root of the project: high level summary including:
+
+    - Name of the Project
+    - Authors
+    - Email Contact
+    - Summary of the project goals
+    - How to run/start the project
+    - Table of Content that links to the rest of the doc
+
+The standardised project structure includes a *docs* folder and the necessary tools to export function docstrings into a document.
+
+Consider using [Markdown](https://guides.github.com/features/mastering-markdown/) to write your documentation. It is basically a text file with specific formatting rules that allows it to be converted into Word Document, HTML page, PDF, etc. As it is a text file, it can be written from within CDSW in DAP and it is compatible with Git/Gitlab. MS Word is neither compatible with Git, nor can you use it in CDSW.
+
+## 5- Modular Analysis using Python Package
+
+<span class="link">`r learning_icon` [Modular Analysis ](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_structure.html) </span>
+
+Breaking your code down into smaller, more manageable chunks is a sensible way to improve readability, increase maintainability and enable teams to work together.
+
+Coding for analysis is like writing, the first draft is rarely ideal. You will normally need to do a second draft, this will involve refactoring.
+
+Refactoring involves editing and cleaning up previously written code.
+
+The standard EMR project template includes a fully configured python package in which you can place your code, which can then be called to preform your analysis.
+
+- Write the building blocks of your analysis in the python package. Then in the analysis folder you call this high level function to preform your analysis.
+- If you write code sequentially repeating and adapting the same part of the code multiple times, then refactor this into a function.
+- Don't have long scripts, this are hard to follow, maintain and increase the chance of errors. A good rule of thumb is to keep scripts under 100 lines, if it is over that indicates that you need to refactor your code.
+
+Storing code in a package has a number of benefits:
+
+- Handles tricky path issues
+- Ensures reproducibility
+- Makes testing/documenting easier
+- Makes the code easy to reuse
+- Ensures proper structure
+
+## 6- Code Testing
+
+<span class="link">`r learning_icon` [Testing ](https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html) </span>
+
+<span class="link">`r learning_icon` [Pytest ](https://docs.pytest.org/en/6.2.x/) </span>
+
+
+# Why test?
+
+> Write code, run it, repeat until it works.
+> While you are testing your code in this workflow, you're only doing it informally. The problem with this approach is that when you come back to this code in 3 months time to add a new feature, you've probably forgotten some of the informal tests you ran the first time around. This makes it very easy to break code that used to work.
+> I started using automated tests because I discovered I was spending too much time re-fixing bugs that I'd already fixed before. While writing code or fixing bugs, I'd perform interactive tests to make sure the code worked. But I never had a system which could store those tests so I could re-run them as needed. I think that this is a common practice among programmers **.** 
+> **It's not that you don't test your code, it's that you don't automate your tests**.
+
+> -- <cite> [Hadley Wickham](https://r-pkgs.org/tests.html) </cite> 
+
+Benefits
+
+- Meet QA standards as set out in the AQUA book
+- Greatly improves code quality
+- Ensures that outputs which influence decisions is correct and not due to errors in the code
+- Manage projects, as projects get larger you will need to change adapt sections. When you make a change how do you know whether you have introduced a bug, broken something? Tests fix this making large projects with multiple people manageable
+
+The standard testing framework for EMR is [pytest](https://docs.pytest.org/en/stable/). There are many testing frameworks available and if you need particular functionality not offered by pytest then feel free to deviate.
+
+:::
+
+
+
+
+
+
+
