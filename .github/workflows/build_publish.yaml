@@ -13,7 +13,7 @@ on:
 name: build_publish
 
 jobs:
-  R-CMD-check:
+  build-publish:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,10 +21,9 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install dependencies
         run: |
-          install.packages(c("govdown", "fontawesome", "remotes"))
-          remotes::install_deps(dependencies = TRUE)
+          install.packages(c("govdown", "fontawesome"))
         shell: Rscript {0}
-      - name: Check
+      - name: Build Site
         run: |
           rmarkdown::render_site(encoding = 'UTF-8')
         shell: Rscript {0}
