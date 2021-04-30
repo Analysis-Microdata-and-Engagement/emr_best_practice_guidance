@@ -2,3 +2,4 @@ _*.Rmd
 .Rhistory
 .Rproj.user/
 *.Rproj
+.Rbuildignore
