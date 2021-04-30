@@ -21,7 +21,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install dependencies
         run: |
-          install.packages(c("govdown", "fontawesome"))
+          install.packages(c("govdown", "fontawesome", "remotes"))
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
