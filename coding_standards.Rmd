@@ -11,22 +11,36 @@ learning_icon = fontawesome::fa("laptop-code")
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
-  background-color: #bdb7b7;
+  background-color: #4952b5;
   font-size: 2em;
+  transition: 1s;
+  text-decoration: none;
+  color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #000000;
+  color: white;
+  font-size: 3em;
+}
+
 
 ```
 
-These are the tools that all analysts in EMR should implement.
+### `r fontawesome::fa('git-square')`  Version Control with Git and Gitlab/GitHub
+### `r fontawesome::fa('project-diagram')`  Standard project structure
+### `r fontawesome::fa('file-signature')`  Good naming
+### `r fontawesome::fa('address-book')`  Documentation
+### `r fontawesome::fa('cubes')`  Modular Analysis using Python Package
+### `r fontawesome::fa('vials')`  Code Testing
 
-1. Version Control with Git and Gitlab/GitHub
-2. Standard project structure
-3. Good naming
-4. Documentation
-5. Functional Programming using Python Package
-6. Code Testing
+---
 
-All these tools are supported in DAP.
+These are the tools that all analysts in EMR should implement. All these tools are supported in DAP.
 
 ## Quality Assurance of Code for Analysis and Research
 
@@ -38,16 +52,18 @@ Each section is a recommendation of what all projects in EMR should implement.
 
 Each section consists of a overview of the method or tool and a learning resource to get further information. This learning resource, primarily the [Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html), is the main method of learning.
 
-These Resource blocks are hyperlinks, click on them to access the resource.
+These Resource blocks `r learning_icon` are hyperlinks, click on them to access the resource. 
 
 ::: {.accordion}
 ## 1 - Version Control with Git
 
-<span class="link">`r learning_icon` [Version control](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html) </span>
+<a href="https://www.bbc.co.uk/news">
+<span class="link">`r learning_icon` Version control</span>
+</a>
 
-- Git- version control system, local to your laptop
-- GitLab- hosts Git projects. Code available to team and can be made available to people in ONS
-- GitHub- similar to GitLab but code available to world- completely open
+- `r fontawesome::fa('git-square')` Git- version control system, local to your laptop
+- `r fontawesome::fa('gitlab')` GitLab- hosts Git projects. Code available to team and can be made available to people in ONS
+- `r fontawesome::fa('github-square')` GitHub- similar to GitLab but code available to world- completely open
 
 GitLab is the default for projects. An AME GitHub account is available.
 
@@ -63,7 +79,6 @@ GitLab is the default for projects. An AME GitHub account is available.
 ## 2- Standard project structure
 
 <span class="link">`r learning_icon` [EMR Project Template ](https://github.com/Analysis-Microdata-and-Engagement/emr_project_template) </span>
-
 
 > [A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science)
 > -- <cite> [Cookiecutter Data Science](http://drivendata.github.io/cookiecutter-data-science/)</cite>

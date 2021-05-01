@@ -10,6 +10,6 @@ navbar: # links to include in the bar at the top of every page
     href: project_guidelines.html
 output:
   govdown::govdown_document:
-    page_title: "html link"
-    title: "EMR "
+    page_title: "EMR Best Practice Guidance"
+    title: "EMR Best Practice Guidance"
     logo_text: ""
