@@ -57,7 +57,7 @@ These Resource blocks `r learning_icon` are hyperlinks, click on them to access 
 ::: {.accordion}
 ## 1 - Version Control with Git
 
-<a href="https://www.bbc.co.uk/news">
+<a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html">
 <span class="link">`r learning_icon` Version control</span>
 </a>
 
