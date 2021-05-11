@@ -78,7 +78,9 @@ GitLab is the default for projects. An AME GitHub account is available.
 
 ## 2- Standard project structure
 
-<span class="link">`r learning_icon` [EMR Project Template ](https://github.com/Analysis-Microdata-and-Engagement/emr_project_template) </span>
+<a href= "https://github.com/Analysis-Microdata-and-Engagement/emr_project_template" >
+<span class="link">`r learning_icon` EMR Project Template </span>
+</a>
 
 > [A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science)
 > -- <cite> [Cookiecutter Data Science](http://drivendata.github.io/cookiecutter-data-science/)</cite>
@@ -102,8 +104,9 @@ We recommend that one person in the team is in charge of keeping the project (fi
 
 ## 3 – Good naming
 
-<span class="link">`r learning_icon` [Good Naming ](https://best-practice-and-impact.github.io/qa-of-code-guidance/core_programming.html#naming) </span>
-
+<a href= "https://best-practice-and-impact.github.io/qa-of-code-guidance/core_programming.html#naming" >
+<span class="link">`r learning_icon` Good Naming </span>
+</a>
 
 Code with high readability is often referred to as &#39;clean code&#39;. Clean code helps us understand a program faster, as it avoids points of confusion and ambiguity.
 
@@ -129,9 +132,13 @@ You might want to establish a project standard. For example you may want to name
 
 ## 4 - Documentation
 
-<span class="link">`r learning_icon` [Code Documentation ](https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html) </span>
+<a href= "https://best-practice-and-impact.github.io/qa-of-code-guidance/code_documentation.html" >
+<span class="link">`r learning_icon` Code Documentation </span>
+</a>
 
-<span class="link">`r learning_icon` [Project Documentation ](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html) </span>
+<a href= "https://best-practice-and-impact.github.io/qa-of-code-guidance/project_documentation.html" >
+<span class="link">`r learning_icon` Project Documentation </span>
+</a>
 
 Documentation should be stored as close to the code as possible so that if you change your code there is less chance you forget to update the documentation (rotten documentation is harmful):
 
@@ -155,7 +162,9 @@ Consider using [Markdown](https://guides.github.com/features/mastering-markdown/
 
 ## 5- Modular Analysis using Python Package
 
-<span class="link">`r learning_icon` [Modular Analysis ](https://best-practice-and-impact.github.io/qa-of-code-guidance/project_structure.html) </span>
+<a href= "https://best-practice-and-impact.github.io/qa-of-code-guidance/project_structure.html" >
+<span class="link">`r learning_icon` Modular Analysis </span>
+</a>
 
 Breaking your code down into smaller, more manageable chunks is a sensible way to improve readability, increase maintainability and enable teams to work together.
 
@@ -179,10 +188,9 @@ Storing code in a package has a number of benefits:
 
 ## 6- Code Testing
 
-<span class="link">`r learning_icon` [Testing ](https://best-practice-and-impact.github.io/qa-of-code-guidance/testing_code.html) </span>
-
-<span class="link">`r learning_icon` [Pytest ](https://docs.pytest.org/en/6.2.x/) </span>
-
+<a href= "https://docs.pytest.org/en/6.2.x/" >
+<span class="link">`r learning_icon` Pytest </span>
+</a>
 
 # Why test?
 
