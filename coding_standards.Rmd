@@ -58,7 +58,7 @@ These Resource blocks `r learning_icon` are hyperlinks, click on them to access 
 ## 1 - Version Control with Git
 
 <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html">
-<span class="link">`r learning_icon` Version control</span>
+<span class="link">`r learning_icon` Version control </span>
 </a>
 
 - `r fontawesome::fa('git-square')` Git- version control system, local to your laptop
