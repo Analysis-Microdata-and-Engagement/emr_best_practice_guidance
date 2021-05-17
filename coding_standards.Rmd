@@ -61,20 +61,55 @@ These Resource blocks `r learning_icon` are hyperlinks, click on them to access 
 <span class="link">`r learning_icon` Version control </span>
 </a>
 
-- `r fontawesome::fa('git-square')` Git- version control system, local to your laptop
-- `r fontawesome::fa('gitlab')` GitLab- hosts Git projects. Code available to team and can be made available to people in ONS
+### What is it?
+
+Git is software for tracking changes across a set of files and over time (i.e. version control). You can think of it as MS Word's track changes under steroid. It is usually used in sync with a remote software like Gitlab or Github for coordinating work between multiple programmers. You can think of Gitlab/Github as a shared drive or Google drive. 
+
+- `r fontawesome::fa('git-square')` Git - version control system, local to your laptop
+- `r fontawesome::fa('gitlab')` ONS GitLab - hosts Git projects. Code available to team and can be made available to people in ONS
 - `r fontawesome::fa('github-square')` GitHub- similar to GitLab but code available to world- completely open
 
-GitLab is the default for projects. An AME GitHub account is available.
+GitLab is the default for projects. An AME GitHub account is available. Note that there is a real world Gitlab, which we do not recommend to use.
 
-- Help your teams to work on the same, centralised code base
-- Give your team a back up of the project on Gitlab (hard drives and CDSW storge can break)
-- Help your team keep the project clean (no historical clutter)
-- Help EMR keep an history of its projects (all discoverable in one place, that is Gitlab)
-- Guarantee an audit trail using version control software
-- Tracks changes, make AQA easier (Analytical Quality Assurance)
-- version control helps us to identify which changes have negatively impacted our work and remove them.
-- Needed for DAP projects
+### Why is it good for me?
+
+The version control workflow is professional standard when it comes to writing code because it brings solutions to many problems.
+
+Git/Gitlab helps your team to keep the project clean an organised:
+
+- Say good bye to historical clutter like `script-v0.6-GMreview-final2.py`
+- Delete, reorganise or rewrite code with no fear! you can always go back in time!
+- Wonder if something is still useful or even broken? check who wrote it and ask them!
+- Enable modularisation and reusability
+
+Git/Gitlab helps your team to document, debug and QA their code:
+
+- Write useful descriptions of your changes (what task it relates too, etc)
+- Go through the history of a file to track when a bug was introduced (and by who?)
+- Use merge request to review code and store the reviewing discussion (see more in Reviewing Section)
+
+Git/Gitlab helps your team to work on the same, centralised code base:
+
+- Everyone is sharing the same project, only one version of the truth
+- Make change to a file without worrying about other people needing the file "right now"
+- Use branches to implement a new analysis, data linking without breaking the project for the rest of the team
+- Recover the project easily: it is backed up on Gitlab and on each of your colleagues' machine
+
+Gitlab helps EMR to keep an central archive of its projects on Gitlab:
+
+- Hand over projects to new member of staff with a simple link.
+- Access documenation tools: add front page README.md or wiki for new member of staffs or stakeholders
+- Access management and communitation tools to keep important decisions, conversations and milestones in one place
+- Guarantee an audit trail
+
+Finally, note that Git and Gitlab are highly recommended by DST for DAP projects as CDSW is not meant to be used as a back up plan.
+
+### How do I get started?
+
+- Learning Hub course: [Git and Gitlab](https://learninghub.ons.gov.uk/enrol/index.php?id=782)
+- Slides from EMR training resources: [Intro to Git / Gitlab](https://officenationalstatistics.sharepoint.com/:p:/r/sites/ESPIEREconMicroRec/Trng/Coding/Introduction/Git_and_GitLab_0.49.pptx?d=w9d73e0510b944581acf54a2dba2c476a&csf=1&web=1&e=blOdve)
+- Cheatsheets: [Official Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) and [EMR Cheatsheet](https://officenationalstatistics.sharepoint.com/sites/ESPIEREconMicroRec/_layouts/OneNote.aspx?id=%2Fsites%2FESPIEREconMicroRec%2FONL%2FTraining%20Resources&wd=target%28DAP.one%7C4DDE9F35-57E6-48B0-B7AB-FBFD5766B004%2FGit%20and%20Gitlab%20%28Intro%20and%20Cheat%20Sheet%5C%29%7CBF147F0E-D6C3-41EC-A5AB-14BFDF5EB9CC%2F%29)
+
 
 ## 2- Standard project structure
 
