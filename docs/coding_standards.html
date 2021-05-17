@@ -4195,44 +4195,103 @@ These Resource blocks <svg aria-hidden="true" role="img" viewBox="0 0 640 512" s
 <p class="govuk-body">
 <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html"> <span class="link"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg> Version control </span> </a>
 </p>
+<p class="govuk-body">
+Git is software for tracking changes across a set of files and over time (i.e. version control). You can think of it as MS Word’s track changes under steroid. It is usually used in sync with a remote software like Gitlab or Github for coordinating work between multiple programmers. You can think of Gitlab/Github as a shared drive or Google drive.
+</p>
 <ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
-<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M100.59 334.24c48.57 3.31 58.95 2.11 58.95 11.94 0 20-65.55 20.06-65.55 1.52.01-5.09 3.29-9.4 6.6-13.46zm27.95-116.64c-32.29 0-33.75 44.47-.75 44.47 32.51 0 31.71-44.47.75-44.47zM448 80v352a48 48 0 0 1-48 48H48a48 48 0 0 1-48-48V80a48 48 0 0 1 48-48h352a48 48 0 0 1 48 48zm-227 69.31c0 14.49 8.38 22.88 22.86 22.88 14.74 0 23.13-8.39 23.13-22.88S258.62 127 243.88 127c-14.48 0-22.88 7.84-22.88 22.31zM199.18 195h-49.55c-25-6.55-81.56-4.85-81.56 46.75 0 18.8 9.4 32 21.85 38.11C74.23 294.23 66.8 301 66.8 310.6c0 6.87 2.79 13.22 11.18 16.76-8.9 8.4-14 14.48-14 25.92C64 373.35 81.53 385 127.52 385c44.22 0 69.87-16.51 69.87-45.73 0-36.67-28.23-35.32-94.77-39.38l8.38-13.43c17 4.74 74.19 6.23 74.19-42.43 0-11.69-4.83-19.82-9.4-25.67l23.38-1.78zm84.34 109.84l-13-1.78c-3.82-.51-4.07-1-4.07-5.09V192.52h-52.6l-2.79 20.57c15.75 5.55 17 4.86 17 10.17V298c0 5.62-.31 4.58-17 6.87v20.06h72.42zM384 315l-6.87-22.37c-40.93 15.37-37.85-12.41-37.85-16.73v-60.72h37.85v-25.41h-35.82c-2.87 0-2 2.52-2-38.63h-24.18c-2.79 27.7-11.68 38.88-34 41.42v22.62c20.47 0 19.82-.85 19.82 2.54v66.57c0 28.72 11.43 40.91 41.67 40.91 14.45 0 30.45-4.83 41.38-10.2z"></path></svg> Git- version control system, local to your laptop
+<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M100.59 334.24c48.57 3.31 58.95 2.11 58.95 11.94 0 20-65.55 20.06-65.55 1.52.01-5.09 3.29-9.4 6.6-13.46zm27.95-116.64c-32.29 0-33.75 44.47-.75 44.47 32.51 0 31.71-44.47.75-44.47zM448 80v352a48 48 0 0 1-48 48H48a48 48 0 0 1-48-48V80a48 48 0 0 1 48-48h352a48 48 0 0 1 48 48zm-227 69.31c0 14.49 8.38 22.88 22.86 22.88 14.74 0 23.13-8.39 23.13-22.88S258.62 127 243.88 127c-14.48 0-22.88 7.84-22.88 22.31zM199.18 195h-49.55c-25-6.55-81.56-4.85-81.56 46.75 0 18.8 9.4 32 21.85 38.11C74.23 294.23 66.8 301 66.8 310.6c0 6.87 2.79 13.22 11.18 16.76-8.9 8.4-14 14.48-14 25.92C64 373.35 81.53 385 127.52 385c44.22 0 69.87-16.51 69.87-45.73 0-36.67-28.23-35.32-94.77-39.38l8.38-13.43c17 4.74 74.19 6.23 74.19-42.43 0-11.69-4.83-19.82-9.4-25.67l23.38-1.78zm84.34 109.84l-13-1.78c-3.82-.51-4.07-1-4.07-5.09V192.52h-52.6l-2.79 20.57c15.75 5.55 17 4.86 17 10.17V298c0 5.62-.31 4.58-17 6.87v20.06h72.42zM384 315l-6.87-22.37c-40.93 15.37-37.85-12.41-37.85-16.73v-60.72h37.85v-25.41h-35.82c-2.87 0-2 2.52-2-38.63h-24.18c-2.79 27.7-11.68 38.88-34 41.42v22.62c20.47 0 19.82-.85 19.82 2.54v66.57c0 28.72 11.43 40.91 41.67 40.91 14.45 0 30.45-4.83 41.38-10.2z"></path></svg> Git - version control system, local to your laptop
 </li>
 <li class="govuk-body">
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M105.2 24.9c-3.1-8.9-15.7-8.9-18.9 0L29.8 199.7h132c-.1 0-56.6-174.8-56.6-174.8zM.9 287.7c-2.6 8 .3 16.9 7.1 22l247.9 184-226.2-294zm160.8-88l94.3 294 94.3-294zm349.4 88l-28.8-88-226.3 294 247.9-184c6.9-5.1 9.7-14 7.2-22zM425.7 24.9c-3.1-8.9-15.7-8.9-18.9 0l-56.6 174.8h132z"></path></svg> GitLab- hosts Git projects. Code available to team and can be made available to people in ONS
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M105.2 24.9c-3.1-8.9-15.7-8.9-18.9 0L29.8 199.7h132c-.1 0-56.6-174.8-56.6-174.8zM.9 287.7c-2.6 8 .3 16.9 7.1 22l247.9 184-226.2-294zm160.8-88l94.3 294 94.3-294zm349.4 88l-28.8-88-226.3 294 247.9-184c6.9-5.1 9.7-14 7.2-22zM425.7 24.9c-3.1-8.9-15.7-8.9-18.9 0l-56.6 174.8h132z"></path></svg> ONS GitLab - hosts Git projects. Code available to team and can be made available to people in ONS
 </li>
 <li class="govuk-body">
 <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path></svg> GitHub- similar to GitLab but code available to world- completely open
 </li>
 </ul>
 <p class="govuk-body">
-GitLab is the default for projects. An AME GitHub account is available.
+GitLab is the default for projects. An AME GitHub account is available. Note that there is a real world Gitlab, which we do not recommend to use.
+</p>
+<p class="govuk-body">
+The version control workflow is professional standard when it comes to writing code because it brings solutions to many problems.
+</p>
+<p class="govuk-body">
+Git/Gitlab helps your team to keep the project clean an organised:
 </p>
 <ul class="govuk-list govuk-list--bullet">
 <li class="govuk-body">
-Help your teams to work on the same, centralised code base
+Say good bye to historical clutter like <code>script-v0.6-GMreview-final2.py</code>
 </li>
 <li class="govuk-body">
-Give your team a back up of the project on Gitlab (hard drives and CDSW storge can break)
+Delete, reorganise or rewrite code with no fear! you can always go back in time!
 </li>
 <li class="govuk-body">
-Help your team keep the project clean (no historical clutter)
+Wonder if something is still useful or even broken? check who wrote it and ask them!
 </li>
 <li class="govuk-body">
-Help EMR keep an history of its projects (all discoverable in one place, that is Gitlab)
+Enable modularisation and reusability
+</li>
+</ul>
+<p class="govuk-body">
+Git/Gitlab helps your team to document, debug and QA their code:
+</p>
+<ul class="govuk-list govuk-list--bullet">
+<li class="govuk-body">
+Write useful descriptions of your changes (what task it relates too, etc)
 </li>
 <li class="govuk-body">
-Guarantee an audit trail using version control software
+Go through the history of a file to track when a bug was introduced (and by who?)
 </li>
 <li class="govuk-body">
-Tracks changes, make AQA easier (Analytical Quality Assurance)
+Use merge request to review code and store the reviewing discussion (see more in Reviewing Section)
+</li>
+</ul>
+<p class="govuk-body">
+Git/Gitlab helps your team to work on the same, centralised code base:
+</p>
+<ul class="govuk-list govuk-list--bullet">
+<li class="govuk-body">
+Everyone is sharing the same project, only one version of the truth
 </li>
 <li class="govuk-body">
-version control helps us to identify which changes have negatively impacted our work and remove them.
+Make change to a file without worrying about other people needing the file “right now”
 </li>
 <li class="govuk-body">
-Needed for DAP projects
+Use branches to implement a new analysis, data linking without breaking the project for the rest of the team
+</li>
+<li class="govuk-body">
+Recover the project easily: it is backed up on Gitlab and on each of your colleagues’ machine
+</li>
+</ul>
+<p class="govuk-body">
+Gitlab helps EMR to keep an central archive of its projects on Gitlab:
+</p>
+<ul class="govuk-list govuk-list--bullet">
+<li class="govuk-body">
+Hand over projects to new member of staff with a simple link.
+</li>
+<li class="govuk-body">
+Access documenation tools: add front page README.md or wiki for new member of staffs or stakeholders
+</li>
+<li class="govuk-body">
+Access management and communitation tools to keep important decisions, conversations and milestones in one place
+</li>
+<li class="govuk-body">
+Guarantee an audit trail
+</li>
+</ul>
+<p class="govuk-body">
+Finally, note that Git and Gitlab are highly recommended by DST for DAP projects as CDSW is not meant to be used as a back up plan.
+</p>
+<ul class="govuk-list govuk-list--bullet">
+<li class="govuk-body">
+Learning Hub course: <a href="https://learninghub.ons.gov.uk/enrol/index.php?id=782" class="govuk-link">Git and Gitlab</a>
+</li>
+<li class="govuk-body">
+Slides from EMR training resources: <a href="https://officenationalstatistics.sharepoint.com/:p:/r/sites/ESPIEREconMicroRec/Trng/Coding/Introduction/Git_and_GitLab_0.49.pptx?d=w9d73e0510b944581acf54a2dba2c476a&amp;csf=1&amp;web=1&amp;e=blOdve" class="govuk-link">Intro to Git / Gitlab</a>
+</li>
+<li class="govuk-body">
+Cheatsheets: <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" class="govuk-link">Official Cheatsheet</a> and <a href="https://officenationalstatistics.sharepoint.com/sites/ESPIEREconMicroRec/_layouts/OneNote.aspx?id=%2Fsites%2FESPIEREconMicroRec%2FONL%2FTraining%20Resources&amp;wd=target%28DAP.one%7C4DDE9F35-57E6-48B0-B7AB-FBFD5766B004%2FGit%20and%20Gitlab%20%28Intro%20and%20Cheat%20Sheet%5C%29%7CBF147F0E-D6C3-41EC-A5AB-14BFDF5EB9CC%2F%29" class="govuk-link">EMR Cheatsheet</a>
 </li>
 </ul>
 </div></div>
